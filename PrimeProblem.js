@@ -1,18 +1,27 @@
-
-let num=17;
-
-let count=0
-
-for(let i=1;i<=num;i++){
-if(num%i==0){
-count++
+let num=14;
+function checkprime(num){
+    let count=0;
+    for(let i=2; i<num; i++)
+    {
+        if(num%i==0)
+        {
+            count++;
+        }
+    }
+    if(count==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
-}
-if(count==2){
-
+if(checkprime(num)==true)
+{
 console.log(num,"is a prime number")
 }
 else
 {
-    console.log(num,"is not a prime number")
+console.log(num,"is not a prime number")
 }
